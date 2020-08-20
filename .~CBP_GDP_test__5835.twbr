@@ -1,0 +1,1719 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook source-build='2020.3.0 (20203.20.0801.1333)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='CBP_GDP_Test' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cbp18cd' inline='true' name='federated.11h86tj02kd6wf1dzy0p01ejyavu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cbp18cd' name='textscan.0ysp95v0o6z9f811y5z161ktvy3d'>
+            <connection class='textscan' directory='/Users/pariya/Desktop/pariya_misc' filename='cbp18cd.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ysp95v0o6z9f811y5z161ktvy3d' name='cbp18cd.csv' table='[cbp18cd#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='State FIPS' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='integer' name='116th Congressional District' ordinal='2' />
+            <column datatype='string' name='2017 NAICS Code' ordinal='3' />
+            <column datatype='string' name='NAICS Description' ordinal='4' />
+            <column datatype='integer' name='Number of Establishments ' ordinal='5' />
+            <column datatype='integer' name='Employment ' ordinal='6' />
+            <column datatype='string' name='Employment Noise Flag' ordinal='7' />
+            <column datatype='integer' name=' 1st Quarter Payroll ($1,000) ' ordinal='8' />
+            <column datatype='string' name='1st Quarter Payroll Noise Flag' ordinal='9' />
+            <column datatype='integer' name=' Annual Payroll ($1,000) ' ordinal='10' />
+            <column datatype='string' name='Annual Payroll Noise Flag' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ysp95v0o6z9f811y5z161ktvy3d' name='cbp18cd.csv' table='[cbp18cd#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='State FIPS' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='integer' name='116th Congressional District' ordinal='2' />
+            <column datatype='string' name='2017 NAICS Code' ordinal='3' />
+            <column datatype='string' name='NAICS Description' ordinal='4' />
+            <column datatype='integer' name='Number of Establishments ' ordinal='5' />
+            <column datatype='integer' name='Employment ' ordinal='6' />
+            <column datatype='string' name='Employment Noise Flag' ordinal='7' />
+            <column datatype='integer' name=' 1st Quarter Payroll ($1,000) ' ordinal='8' />
+            <column datatype='string' name='1st Quarter Payroll Noise Flag' ordinal='9' />
+            <column datatype='integer' name=' Annual Payroll ($1,000) ' ordinal='10' />
+            <column datatype='string' name='Annual Payroll Noise Flag' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State FIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State FIPS]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>State FIPS</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>116th Congressional District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[116th Congressional District]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>116th Congressional District</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2017 NAICS Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2017 NAICS Code]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>2017 NAICS Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAICS Description]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>NAICS Description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Establishments </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Establishments ]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>Number of Establishments </remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employment </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employment ]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>Employment </remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employment Noise Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Employment Noise Flag]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>Employment Noise Flag</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name> 1st Quarter Payroll ($1,000) </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ 1st Quarter Payroll ($1,000) ]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias> 1st Quarter Payroll ($1,000) </remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1st Quarter Payroll Noise Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[1st Quarter Payroll Noise Flag]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>1st Quarter Payroll Noise Flag</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name> Annual Payroll ($1,000) </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ Annual Payroll ($1,000) ]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias> Annual Payroll ($1,000) </remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Payroll Noise Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual Payroll Noise Flag]</local-name>
+            <parent-name>[cbp18cd.csv]</parent-name>
+            <remote-alias>Annual Payroll Noise Flag</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1st Quarter Payroll ($1,000)' datatype='integer' name='[ 1st Quarter Payroll ($1,000) ]' role='measure' type='quantitative' />
+      <column caption='Annual Payroll ($1,000)' datatype='integer' name='[ Annual Payroll ($1,000) ]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[116th Congressional District]' role='dimension' semantic-role='[Congress].[Name]' type='ordinal' />
+      <column caption='Employment' datatype='integer' name='[Employment ]' role='measure' type='quantitative' />
+      <column caption='Number of Establishments' datatype='integer' name='[Number of Establishments ]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='cbp18cd.csv' datatype='table' name='[__tableau_internal_object_id__].[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, 116th Congressional District'>
+          <field>[State]</field>
+          <field>[116th Congressional District]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/pariya/Desktop/pariya_misc/cbp18cd.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2020 09:53:31 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='cbp18cd' increment-value='%null%' refresh-type='create' rows-inserted='9114' timestamp-start='2020-08-20 09:53:31.477' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>State FIPS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[State FIPS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State FIPS</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>116th Congressional District</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[116th Congressional District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>116th Congressional District</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2017 NAICS Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[2017 NAICS Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2017 NAICS Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICS Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAICS Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICS Description</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Establishments </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Establishments ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Establishments </remote-alias>
+              <ordinal>5</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2182</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employment </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employment ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employment </remote-alias>
+              <ordinal>6</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4285</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employment Noise Flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Employment Noise Flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employment Noise Flag</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name> 1st Quarter Payroll ($1,000) </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ 1st Quarter Payroll ($1,000) ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias> 1st Quarter Payroll ($1,000) </remote-alias>
+              <ordinal>8</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5568</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1st Quarter Payroll Noise Flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[1st Quarter Payroll Noise Flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1st Quarter Payroll Noise Flag</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name> Annual Payroll ($1,000) </remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ Annual Payroll ($1,000) ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias> Annual Payroll ($1,000) </remote-alias>
+              <ordinal>10</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8403</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Payroll Noise Flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Annual Payroll Noise Flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Payroll Noise Flag</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cbp18cd.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cbp18cd.csv' id='cbp18cd.csv_EB70F08AD8884358A8CF46F5EC788F76'>
+            <properties context=''>
+              <relation connection='textscan.0ysp95v0o6z9f811y5z161ktvy3d' name='cbp18cd.csv' table='[cbp18cd#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='State FIPS' ordinal='0' />
+                  <column datatype='string' name='State' ordinal='1' />
+                  <column datatype='integer' name='116th Congressional District' ordinal='2' />
+                  <column datatype='string' name='2017 NAICS Code' ordinal='3' />
+                  <column datatype='string' name='NAICS Description' ordinal='4' />
+                  <column datatype='integer' name='Number of Establishments ' ordinal='5' />
+                  <column datatype='integer' name='Employment ' ordinal='6' />
+                  <column datatype='string' name='Employment Noise Flag' ordinal='7' />
+                  <column datatype='integer' name=' 1st Quarter Payroll ($1,000) ' ordinal='8' />
+                  <column datatype='string' name='1st Quarter Payroll Noise Flag' ordinal='9' />
+                  <column datatype='integer' name=' Annual Payroll ($1,000) ' ordinal='10' />
+                  <column datatype='string' name='Annual Payroll Noise Flag' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='gdp12_19' inline='true' name='federated.1akcr8u1rgfamq13e8cui1ai86v6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gdp12_19' name='textscan.0deqxy318zv1vt1gsbb9y10fmhci'>
+            <connection class='textscan' directory='/Users/pariya/Desktop/pariya_misc/gdp' filename='gdp12_19.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0deqxy318zv1vt1gsbb9y10fmhci' name='gdp12_19.csv' table='[gdp12_19#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='integer' name='F6' ordinal='5' />
+            <column datatype='integer' name='F7' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+            <column datatype='integer' name='F9' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0deqxy318zv1vt1gsbb9y10fmhci' name='gdp12_19.csv' table='[gdp12_19#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='integer' name='F6' ordinal='5' />
+            <column datatype='integer' name='F7' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+            <column datatype='integer' name='F9' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[gdp12_19.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='States' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column caption='2012' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+      <column caption='2013' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='2014' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='2015' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+      <column caption='2016' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+      <column caption='2017' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+      <column caption='2018' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+      <column caption='2019' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='gdp12_19.csv' datatype='table' name='[__tableau_internal_object_id__].[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F4]' derivation='Sum' name='[sum:F4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F6]' derivation='Sum' name='[sum:F6:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F7]' derivation='Sum' name='[sum:F7:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F8]' derivation='Sum' name='[sum:F8:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F9]' derivation='Sum' name='[sum:F9:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/pariya/Desktop/pariya_misc/gdp12_19.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2020 09:53:50 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='gdp12_19' increment-value='%null%' refresh-type='create' rows-inserted='60' timestamp-start='2020-08-20 09:53:50.705' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F6</remote-alias>
+              <ordinal>5</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F7</remote-alias>
+              <ordinal>6</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F8</remote-alias>
+              <ordinal>7</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F9</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F9</remote-alias>
+              <ordinal>8</ordinal>
+              <family>gdp12_19.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='green_orange_cyan_yellow_10_0' type='palette'>
+            <map to='#3ca8bc'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F6:qk]&quot;</bucket>
+            </map>
+            <map to='#4e9f50'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F2:qk]&quot;</bucket>
+            </map>
+            <map to='#87d180'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#94a323'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F8:qk]&quot;</bucket>
+            </map>
+            <map to='#98d9e4'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F7:qk]&quot;</bucket>
+            </map>
+            <map to='#a08400'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[__tableau_internal_object_id__].[cnt:gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509:qk]&quot;</bucket>
+            </map>
+            <map to='#c3ce3d'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F9:qk]&quot;</bucket>
+            </map>
+            <map to='#ef8a0c'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F4:qk]&quot;</bucket>
+            </map>
+            <map to='#fcc66d'>
+              <bucket>&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F5:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='gdp12_19.csv' id='gdp12_19.csv_D7944EB04E4A4063AC93676A71CD5509'>
+            <properties context=''>
+              <relation connection='textscan.0deqxy318zv1vt1gsbb9y10fmhci' name='gdp12_19.csv' table='[gdp12_19#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='integer' name='F2' ordinal='1' />
+                  <column datatype='integer' name='F3' ordinal='2' />
+                  <column datatype='integer' name='F4' ordinal='3' />
+                  <column datatype='integer' name='F5' ordinal='4' />
+                  <column datatype='integer' name='F6' ordinal='5' />
+                  <column datatype='integer' name='F7' ordinal='6' />
+                  <column datatype='integer' name='F8' ordinal='7' />
+                  <column datatype='integer' name='F9' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='CBP_GDP' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='CBP_GDP' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Employment by Industries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Employment by Industries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cbp18cd' name='federated.11h86tj02kd6wf1dzy0p01ejyavu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11h86tj02kd6wf1dzy0p01ejyavu'>
+            <column caption='Employment' datatype='integer' name='[Employment ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[NAICS Description]' role='dimension' type='nominal' />
+            <column-instance column='[NAICS Description]' derivation='None' name='[none:NAICS Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Employment ]' derivation='Sum' name='[sum:Employment :qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:NAICS Description:nk]' />
+              <groupfilter function='member' level='[none:NAICS Description:nk]' member='&quot;Total for all sectors&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]' value='22' />
+            <format attr='font-size' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='8' />
+            <format attr='text-format' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]' value='176' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' />
+              <text column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:NAICS Description:nk]</rows>
+        <cols>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]</cols>
+      </table>
+      <simple-id uuid='{F0E2B56D-8F33-4884-94BE-E74A83C2A915}' />
+    </worksheet>
+    <worksheet name='Employment by States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cbp18cd' name='federated.11h86tj02kd6wf1dzy0p01ejyavu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11h86tj02kd6wf1dzy0p01ejyavu'>
+            <column caption='Employment' datatype='integer' name='[Employment ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Employment ]' derivation='Sum' name='[sum:Employment :qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;\&quot;Industries not classified\&quot; means that the industry could not be determined. &quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;&gt;= 5\% noise (high noise)&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;0 to &lt; 2\% noise (low noise)&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;2 to &lt; 5\% noise (medium noise)&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;A congressional district of \&quot;00\&quot; refers to an at-large district&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]' value='24' />
+            <format attr='text-format' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='font-size' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='8' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' />
+              <text column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]</rows>
+        <cols>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]</cols>
+      </table>
+      <simple-id uuid='{A6638336-794D-40C5-AD02-9830AEDF7080}' />
+    </worksheet>
+    <worksheet name='GDP by States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gdp12_19' name='federated.1akcr8u1rgfamq13e8cui1ai86v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1akcr8u1rgfamq13e8cui1ai86v6'>
+            <column caption='States' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column caption='2012' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+            <column caption='2013' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='2014' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column caption='2015' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column caption='2016' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+            <column caption='2017' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+            <column caption='2018' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+            <column caption='2019' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F4]' derivation='Sum' name='[sum:F4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F6]' derivation='Sum' name='[sum:F6:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F7]' derivation='Sum' name='[sum:F7:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F8]' derivation='Sum' name='[sum:F8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F9]' derivation='Sum' name='[sum:F9:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F5:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F6:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F7:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F8:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F9:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F1:nk]' />
+              <groupfilter function='member' level='[none:F1:nk]' member='&quot;States&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+              <bucket>&quot;Alaska&quot;</bucket>
+              <bucket>&quot;North Dakota&quot;</bucket>
+              <bucket>&quot;New York&quot;</bucket>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+              <bucket>&quot;Connecticut&quot;</bucket>
+              <bucket>&quot;Delaware&quot;</bucket>
+              <bucket>&quot;Wyoming&quot;</bucket>
+              <bucket>&quot;Mideast&quot;</bucket>
+              <bucket>&quot;California&quot;</bucket>
+              <bucket>&quot;Washington&quot;</bucket>
+              <bucket>&quot;New England&quot;</bucket>
+              <bucket>&quot;Far West&quot;</bucket>
+              <bucket>&quot;New Jersey&quot;</bucket>
+              <bucket>&quot;Maryland&quot;</bucket>
+              <bucket>&quot;Illinois&quot;</bucket>
+              <bucket>&quot;Nebraska&quot;</bucket>
+              <bucket>&quot;Texas&quot;</bucket>
+              <bucket>&quot;Minnesota&quot;</bucket>
+              <bucket>&quot;Colorado&quot;</bucket>
+              <bucket>&quot;Hawaii&quot;</bucket>
+              <bucket>&quot;Virginia&quot;</bucket>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+              <bucket>&quot;Southwest&quot;</bucket>
+              <bucket>&quot;Iowa&quot;</bucket>
+              <bucket>&quot;Plains&quot;</bucket>
+              <bucket>&quot;South Dakota&quot;</bucket>
+              <bucket>&quot;Rocky Mountain&quot;</bucket>
+              <bucket>&quot;Kansas&quot;</bucket>
+              <bucket>&quot;Great Lakes&quot;</bucket>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+              <bucket>&quot;Louisiana&quot;</bucket>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+              <bucket>&quot;Ohio&quot;</bucket>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+              <bucket>&quot;Oregon&quot;</bucket>
+              <bucket>&quot;Utah&quot;</bucket>
+              <bucket>&quot;Georgia&quot;</bucket>
+              <bucket>&quot;Nevada&quot;</bucket>
+              <bucket>&quot;Indiana&quot;</bucket>
+              <bucket>&quot;Vermont&quot;</bucket>
+              <bucket>&quot;North Carolina&quot;</bucket>
+              <bucket>&quot;Tennessee&quot;</bucket>
+              <bucket>&quot;Missouri&quot;</bucket>
+              <bucket>&quot;Michigan&quot;</bucket>
+              <bucket>&quot;Southeast&quot;</bucket>
+              <bucket>&quot;New Mexico&quot;</bucket>
+              <bucket>&quot;Montana&quot;</bucket>
+              <bucket>&quot;Arizona&quot;</bucket>
+              <bucket>&quot;Florida&quot;</bucket>
+              <bucket>&quot;Maine&quot;</bucket>
+              <bucket>&quot;Kentucky&quot;</bucket>
+              <bucket>&quot;Alabama&quot;</bucket>
+              <bucket>&quot;South Carolina&quot;</bucket>
+              <bucket>&quot;Idaho&quot;</bucket>
+              <bucket>&quot;West Virginia&quot;</bucket>
+              <bucket>&quot;Arkansas&quot;</bucket>
+              <bucket>&quot;Mississippi&quot;</bucket>
+              <bucket>&quot;States&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]</column>
+            <column>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' value='Year&#10;' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[Multiple Values]' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]</rows>
+        <cols>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{A238612D-0F02-49ED-8B76-17EFC7A32863}' />
+    </worksheet>
+    <worksheet name='Map Employment by States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cbp18cd' name='federated.11h86tj02kd6wf1dzy0p01ejyavu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.11h86tj02kd6wf1dzy0p01ejyavu'>
+            <column caption='Employment' datatype='integer' name='[Employment ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Employment ]' derivation='Sum' name='[sum:Employment :qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[Longitude (generated)]' field-type='quantitative' max='31193724.973072749' min='27252141.233615082' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[Latitude (generated)]' field-type='quantitative' max='7105889.1545269415' min='4411218.3167875735' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' />
+              <lod column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[none:State:nk]' />
+              <geometry column='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[Latitude (generated)]</rows>
+        <cols>[federated.11h86tj02kd6wf1dzy0p01ejyavu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{443C0A1D-460D-4987-A051-1FC33667E511}' />
+    </worksheet>
+    <worksheet name='Table GDP by States'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gdp12_19' name='federated.1akcr8u1rgfamq13e8cui1ai86v6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1akcr8u1rgfamq13e8cui1ai86v6'>
+            <column caption='States' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column caption='2012' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+            <column caption='2013' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='2014' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column caption='2015' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column caption='2016' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+            <column caption='2017' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+            <column caption='2018' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+            <column caption='2019' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F4]' derivation='Sum' name='[sum:F4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F6]' derivation='Sum' name='[sum:F6:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F7]' derivation='Sum' name='[sum:F7:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F8]' derivation='Sum' name='[sum:F8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F9]' derivation='Sum' name='[sum:F9:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F5:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F6:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F7:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F8:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1akcr8u1rgfamq13e8cui1ai86v6].[sum:F9:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+              <bucket>&quot;Alaska&quot;</bucket>
+              <bucket>&quot;North Dakota&quot;</bucket>
+              <bucket>&quot;New York&quot;</bucket>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+              <bucket>&quot;Connecticut&quot;</bucket>
+              <bucket>&quot;Delaware&quot;</bucket>
+              <bucket>&quot;Wyoming&quot;</bucket>
+              <bucket>&quot;Mideast&quot;</bucket>
+              <bucket>&quot;California&quot;</bucket>
+              <bucket>&quot;Washington&quot;</bucket>
+              <bucket>&quot;New England&quot;</bucket>
+              <bucket>&quot;Far West&quot;</bucket>
+              <bucket>&quot;New Jersey&quot;</bucket>
+              <bucket>&quot;Maryland&quot;</bucket>
+              <bucket>&quot;Illinois&quot;</bucket>
+              <bucket>&quot;Nebraska&quot;</bucket>
+              <bucket>&quot;Texas&quot;</bucket>
+              <bucket>&quot;Minnesota&quot;</bucket>
+              <bucket>&quot;Colorado&quot;</bucket>
+              <bucket>&quot;Hawaii&quot;</bucket>
+              <bucket>&quot;Virginia&quot;</bucket>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+              <bucket>&quot;Southwest&quot;</bucket>
+              <bucket>&quot;Iowa&quot;</bucket>
+              <bucket>&quot;Plains&quot;</bucket>
+              <bucket>&quot;South Dakota&quot;</bucket>
+              <bucket>&quot;Rocky Mountain&quot;</bucket>
+              <bucket>&quot;Kansas&quot;</bucket>
+              <bucket>&quot;Great Lakes&quot;</bucket>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+              <bucket>&quot;Louisiana&quot;</bucket>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+              <bucket>&quot;Ohio&quot;</bucket>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+              <bucket>&quot;Oregon&quot;</bucket>
+              <bucket>&quot;Utah&quot;</bucket>
+              <bucket>&quot;Georgia&quot;</bucket>
+              <bucket>&quot;Nevada&quot;</bucket>
+              <bucket>&quot;Indiana&quot;</bucket>
+              <bucket>&quot;Vermont&quot;</bucket>
+              <bucket>&quot;North Carolina&quot;</bucket>
+              <bucket>&quot;Tennessee&quot;</bucket>
+              <bucket>&quot;Missouri&quot;</bucket>
+              <bucket>&quot;Michigan&quot;</bucket>
+              <bucket>&quot;Southeast&quot;</bucket>
+              <bucket>&quot;New Mexico&quot;</bucket>
+              <bucket>&quot;Montana&quot;</bucket>
+              <bucket>&quot;Arizona&quot;</bucket>
+              <bucket>&quot;Florida&quot;</bucket>
+              <bucket>&quot;Maine&quot;</bucket>
+              <bucket>&quot;Kentucky&quot;</bucket>
+              <bucket>&quot;Alabama&quot;</bucket>
+              <bucket>&quot;South Carolina&quot;</bucket>
+              <bucket>&quot;Idaho&quot;</bucket>
+              <bucket>&quot;West Virginia&quot;</bucket>
+              <bucket>&quot;Arkansas&quot;</bucket>
+              <bucket>&quot;Mississippi&quot;</bucket>
+              <bucket>&quot;States&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[Multiple Values]' value='8' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[none:F1:nk]</rows>
+        <cols>[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{A5A89DA9-BB80-4A7F-861C-F891AAAD46E5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='CBP_GDP'>
+      <style>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-family' value='Charter' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='50400' x='48800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='50400' x='48800' y='1000'>
+              <zone h='37250' id='10' name='Employment by Industries' w='50400' x='48800' y='61750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32250' id='11' name='GDP by States' w='50400' x='48800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28500' id='13' name='Table GDP by States' w='50400' x='48800' y='33250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='46375' id='3' name='Map Employment by States' w='48000' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='51625' id='9' name='Employment by States' w='48000' x='800' y='47375'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='8' name='Map Employment by States' pane-specification-id='0' param='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' w='14000' x='2600' y='34250' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='21500' id='12' name='GDP by States' pane-specification-id='0' param='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' w='7200' x='89900' y='2250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='23' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='22' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='46375' id='3' is-fixed='true' name='Map Employment by States' w='48000' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='9500' id='8' name='Map Employment by States' pane-specification-id='0' param='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' w='14000' x='2600' y='34250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='250' h='32250' id='11' is-fixed='true' name='GDP by States' w='50400' x='48800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='21500' id='12' name='GDP by States' pane-specification-id='0' param='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' w='7200' x='89900' y='2250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='28500' id='13' is-fixed='true' name='Table GDP by States' w='50400' x='48800' y='33250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51625' id='9' is-fixed='true' name='Employment by States' w='48000' x='800' y='47375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37250' id='10' is-fixed='true' name='Employment by Industries' w='50400' x='48800' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E074CEDA-F235-428E-B6AC-C072AEAB69A8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Employment by Industries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{008A4568-B7F9-4AF6-8CB9-AD15E336E7CD}' />
+    </window>
+    <window class='worksheet' name='Employment by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3FE6A271-7572-4E8D-A153-C4E5BE5E0338}' />
+    </window>
+    <window class='worksheet' name='Map Employment by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11h86tj02kd6wf1dzy0p01ejyavu].[sum:Employment :qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{429A7E0F-287E-4418-A689-A8AD13F9273D}' />
+    </window>
+    <window class='worksheet' name='GDP by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1akcr8u1rgfamq13e8cui1ai86v6].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE63C1A2-FDCD-4C8C-BE84-F6E1312FF7FF}' />
+    </window>
+    <window class='worksheet' name='Table GDP by States'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6205FB68-8F1D-4577-B552-A06D3A26EF4A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='CBP_GDP'>
+      <viewpoints>
+        <viewpoint name='Employment by Industries' />
+        <viewpoint name='Employment by States' />
+        <viewpoint name='GDP by States' />
+        <viewpoint name='Map Employment by States'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Table GDP by States' />
+      </viewpoints>
+      <active id='4' />
+      <device-preview visible='true' />
+      <simple-id uuid='{D35E6F1D-1A3D-4E5D-B209-143190ECD844}' />
+    </window>
+  </windows>
+</workbook>
